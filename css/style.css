@@ -213,6 +213,7 @@ ul li a{
     margin: 10px;
     border-radius: 8px;
     backdrop-filter: blur(12px);
+    overflow: hidden;
 }
 
 .showcase-items img{
@@ -325,6 +326,8 @@ ul li a{
 .list-tema-items{
     width: 15%;
     margin-top: 20px;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .list-tema-items:hover{
@@ -335,7 +338,6 @@ ul li a{
 .list-tema-items img{
     width: 100%;
 }
-
 
 /* Smartphonr */
 @media screen and (min-width : 0px) and (max-width : 680px) {
