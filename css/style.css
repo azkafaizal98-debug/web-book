@@ -180,6 +180,28 @@ body, html{
     margin: auto;
 }
 
+.hero-search{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-search input{
+    width: 60%;
+    border: 1.8px solid blueviolet;
+    border-radius: 8px;
+    padding: 8px;
+    color: blueviolet;
+}
+
+
+.hero-search i{
+    padding: 8px;
+    margin: 0 12px;
+    color: blueviolet;
+}
+
 /* Showcase */
 
 #showcase-container{
