@@ -46,6 +46,7 @@ body, html{
 }
 
 .text-nav{
+    width: 30%;
     display: flex;
     align-items: center;
     height: 60px;
@@ -571,10 +572,14 @@ body, html{
     }
 
     .text-nav{
-
         position: absolute;
         right: 0;
-        padding: 10px 20px;
+        width: 50%;
+        justify-content: end;
+    }
+
+    .text-nav h3{
+        font-size: 12px;
     }
 
     .container-nav .navigasi-a{
@@ -668,6 +673,63 @@ body, html{
 /* Tablet */
 
  @media screen and (min-width:679px) and (max-width: 884px) {
+
+
+        .container-nav .nav-flex label{
+        display: inline-block;
+        font-style: normal;
+        font-size: 30px;
+        color: black;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .container-nav .nav-flex{
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 48px;
+        right: 0;
+    }
+
+    nav ul li a{
+        display: block;
+        padding: 0px 0px 0px 10px;
+        height: auto;
+        width: 50%;
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-nav{
+        display: none;
+    }
+
+
+    .container-nav .navigasi-a{
+        display: none;
+    }
+
+    .container-nav .nav-flex input:checked~.navigasi-a{
+        display: inline;
+    }
+
+    .container-nav  nav ul :hover{
+        background: blueviolet;
+    }
+
+    .hero-items-img{
+        width: 100%;
+    }
+
         .hero-items-img{
             display: none;
         }
