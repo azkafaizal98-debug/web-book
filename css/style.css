@@ -8,11 +8,11 @@ body, html{
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
-    background: radial-gradient(circle, 
+    /* background: radial-gradient(circle, 
     white 0%, 
     #f1e9fb 50%, 
     #d8c9f0 100%);
-    height: 100vh;
+    height: 100vh; */
     scroll-behavior: smooth;
 }
 
@@ -22,7 +22,6 @@ body, html{
     position: relative;
     z-index: 1;
     top: 0;
-    margin-top: 5px;
 }
 
 .nav-flex{
@@ -32,6 +31,9 @@ body, html{
     justify-content: space-between;
     flex-direction: row;
     height: 60px;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border-bottom: 1px solid white;
 }
 
 .nav-flex label,#navbar{
@@ -48,11 +50,11 @@ body, html{
     padding: 15px;
 }
 
-ul{
+ nav ul{
     display: flex;
     list-style: none;
     background-color: white;
-    padding: 5px;
+    padding: 6px;
     border-radius: 14px;
 }
 
@@ -61,8 +63,7 @@ ul{
     transition: 0.8s;
     color: white;
 }
-
-ul li a{
+ nav ul li a{
     color: black;
     text-decoration: none;
     margin: 15px;
@@ -339,7 +340,88 @@ ul li a{
     width: 100%;
 }
 
-/* Smartphonr */
+/* All-Bok */
+
+#all-book-container{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.all-book-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.all-book-items{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-book-items-deskripsi{
+    width: 100%;
+    padding: 20px;
+}
+
+.boks-items{
+    width: 50%;
+    padding: 20px;
+}
+
+.all-book-items img{
+    width: 100%;
+    box-shadow: 1px 2px 10px black;
+     border-radius: 4px;
+}
+
+.deskripsi-all-book{
+    width: 100%;
+    text-align: center;
+}
+
+.deskripsi-all-book p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.deskripsi-all-book h3,span{
+    font-size: 34px;
+    color: blueviolet;
+}
+
+ .all-book-button{
+    width: 100%;
+    margin-top: 35px;
+}
+
+ .all-book-button a{
+    width: 100%;
+    text-decoration: none;
+     display: flex;
+    justify-content: center;
+ }
+
+
+.all-book-button button{
+    width: 40%;
+    padding: 10px;
+    background: transparent;
+    border: solid 1px blueviolet;
+    border-radius: 8px;
+    color: blueviolet;
+}
+
+.all-book-button button:hover{
+    background-color: blueviolet;
+    color: white;
+    transition: 0.8s;
+}
+
+
+/* Smartphone */
 @media screen and (min-width : 0px) and (max-width : 680px) {
     .container-nav .nav-flex label{
         display: inline-block;
@@ -425,6 +507,20 @@ ul li a{
         width: 50%;
         margin: 10px;
      }
+
+     .all-book-flex{
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     .all-book-items{
+        width: 100%;
+     }
+
+     .boks-items{
+        width: 35%;
+     }
+
 }
 
 
