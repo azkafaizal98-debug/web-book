@@ -40,10 +40,15 @@ body, html{
     display: none;
 }
 
-.text-nav{
+.text-nav h3{
     padding: 15px;
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 28px;
+}
+
+.text-nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
 }
 
 .navigasi-a{
@@ -566,6 +571,7 @@ body, html{
     }
 
     .text-nav{
+
         position: absolute;
         right: 0;
         padding: 10px 20px;
