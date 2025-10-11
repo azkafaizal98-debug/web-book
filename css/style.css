@@ -421,6 +421,93 @@ body, html{
 }
 
 
+#book-start{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.book-start-flex{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+.start-items-deskripsi{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-nav h2{
+    font-size: 32px;
+    color: white;
+}
+
+.start-nav button{
+    margin-top: 20px;
+    padding: 10px;
+    background: transparent;
+    border: 1.8px solid white;
+    color: white;
+    margin: 10px 8px;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+
+.start-nav button:hover{
+    background-color: white;
+    color: blueviolet;
+    transition: 0.8s;
+}
+
+.book-start-img{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.start-img1{
+    width: 50%;
+    padding: 10px;
+}
+
+
+.start-img1 img{
+    width: 62%;
+    box-shadow: 1px 2px 10px black;
+    border-radius: 6px;
+}
+
+.start-img2{
+    width: 40%;
+    padding: 10px;
+}
+
+.start-img2 img{
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 1px 2px 10px black; 
+}
+
+.start-img3{
+    width: 40%;
+    padding: 10px;
+}
+
+.start-img3 img{
+    width: 100%;
+    box-shadow: 1px 2px 10px black;
+    border-radius: 6px;
+}
+
 /* Smartphone */
 @media screen and (min-width : 0px) and (max-width : 680px) {
     .container-nav .nav-flex label{
@@ -521,6 +608,32 @@ body, html{
         width: 35%;
      }
 
+     .book-start-flex{
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     .start-items-deskripsi{
+        width: 100%;
+     }
+
+     .start-nav{
+        text-align: center;
+     }
+
+
+     .book-start-img{
+        width: 100%;
+     }
+
+     .start-nav h2{
+        font-size: 25px;
+     }
+
+     .start-nav button{
+        margin-top: 14px;
+        font-size: 10px;
+     }
 }
 
 
