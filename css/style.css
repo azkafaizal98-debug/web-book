@@ -21,6 +21,32 @@ body, html{
     scroll-behavior: smooth;
 }
 
+/* Dark mode */
+
+.dark-mode{
+    background: linear-gradient(to bottom, 
+    black 0%, 
+    #4c4c4c 70%, 
+    rgb(44, 43, 43) 100%);
+    color: white;
+}
+
+.text-nav button {
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: blueviolet;
+    font-size: 12px;
+}
+
+
+.text-nav button:hover{
+    background: black;
+    color: white;
+    transition: 0.8s;
+}
+
 /* Nav */
 .container-nav{
     width: 100%;
@@ -229,12 +255,10 @@ body, html{
     opacity: 0.6;
     font-weight: 1000;
     text-align: center;
-    color: black;
 }
 
 .judul p{
     text-align: center;
-    color: black;
     margin-top: 10px;
 }
 
@@ -383,12 +407,16 @@ body, html{
 #all-book-container{
     width: 100%;
     margin-top: 60px;
+    padding: 18px;
 }
 
 .all-book-flex{
+    padding: 14px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    border: 1.8px solid blueviolet;
+    border-radius: 12px;
 }
 
 .all-book-items{
@@ -447,7 +475,7 @@ body, html{
     width: 40%;
     padding: 10px;
     background: transparent;
-    border: solid 1px blueviolet;
+    border: solid 1.8px blueviolet;
     border-radius: 8px;
     color: blueviolet;
 }
@@ -459,16 +487,18 @@ body, html{
 }
 
 
+/* Book Start */
+
 #book-start{
     width: 100%;
     margin-top: 60px;
+      background-color: blueviolet;
 }
 
 .book-start-flex{
     position: relative;
     width: 100%;
     display: flex;
-    background-color: blueviolet;
     padding: 20px;
 }
 
@@ -576,9 +606,10 @@ body, html{
     text-align: start;
     margin-top: 35px;
     padding: 20px;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     border: 1.8px solid blueviolet;
     border-radius: 12px;
+    background-color: white;
 }
 
 .faq-details details{
@@ -590,6 +621,7 @@ body, html{
 .faq-details details p {
     margin-top: 10px;
     color: black;
+    font-size: 14px;
 }
 
 .faq-details details summary {
@@ -613,6 +645,13 @@ body, html{
         color: black;
         margin-top: 10px;
         padding-left: 10px;
+        color: blueviolet;
+    }
+
+    .text-nav button{
+        padding: 4px;
+        font-size: 10px;
+        width: 50%;
     }
 
     .container-nav .nav-flex{
@@ -645,10 +684,11 @@ body, html{
         width: 50%;
         justify-content: end;
         margin-right: 10px;
+        padding: 12px;
     }
 
     .text-nav h3{
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .container-nav .navigasi-a{
@@ -751,11 +791,19 @@ body, html{
         color: black;
         margin-top: 10px;
         padding-left: 10px;
+        color: blueviolet;
     }
 
     .container-nav .nav-flex{
         width: 100%;
     }
+
+     .text-nav button{
+        padding: 4px;
+        font-size: 10px;
+        width: 50%;
+    }
+
 
     nav ul {
         width: 100%;
@@ -779,7 +827,11 @@ body, html{
     }
 
     .text-nav{
-        display: none;
+        padding: 12px;
+    }
+
+    .text-nav h3{
+        font-size: 16px;
     }
 
 

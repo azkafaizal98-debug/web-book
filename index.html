@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>
+<body id="dark-mode">
     <div class="container-nav">
         <div class="nav-flex">
             <label for="navbar"><i class="fa-solid fa-burger"></i></label>
             <input type="checkbox" id="navbar">
             <div class="text-nav">
                 <h3>Book Webb</h3>
+                <button onclick="darkMode()">Dark Mode</button>
             </div>
             <div class="navigasi-a">
          <nav>
@@ -498,5 +499,13 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        function darkMode(){
+            let body = document.getElementById("dark-mode");
+            body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 </html>
