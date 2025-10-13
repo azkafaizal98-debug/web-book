@@ -415,7 +415,7 @@ body, html{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    border: 1.8px solid blueviolet;
+    /* border: 1.8px solid blueviolet; */
     border-radius: 12px;
 }
 
@@ -636,6 +636,63 @@ body, html{
 .faq-details details > summary {
     list-style-type: '';
 }
+
+
+/* Contact */
+
+#container-contact{
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+#container-contact h4{
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+#container-contact hr{
+    width: 80%;
+    margin: 8px auto;
+    border: 1px solid blueviolet;
+}
+
+ .contact-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
+ }
+
+.contact-items{
+    width: 25%;
+    display: block;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 10px;
+
+}
+
+.contact-items h3{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-items a{
+    width: 100%;
+    text-decoration: none;
+    color: blueviolet;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
 /* Smartphone */
 @media screen and (min-width : 0px) and (max-width : 680px) {
     .container-nav .nav-flex label{
@@ -776,6 +833,11 @@ body, html{
         margin-top: 14px;
         font-size: 10px;
      }
+     
+     .contact-items{
+        width: 50%;
+     }
+
 }
 
 
