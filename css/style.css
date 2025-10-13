@@ -677,11 +677,13 @@ body, html{
     padding: 12px;
     display: flex;
     flex-wrap: wrap;
+    align-items: start;
 }
 
 .contact-items h3{
     width: 100%;
     border-bottom: 1px solid blueviolet;
+    padding-bottom: 4px;
 }
 
 .contact-items a{
