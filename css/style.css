@@ -673,14 +673,11 @@ body, html{
     padding: 12px;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
-    margin: 10px;
 
 }
 
 .contact-items h3{
     width: 100%;
-    text-align: center;
 }
 
 .contact-items a{
@@ -688,7 +685,6 @@ body, html{
     text-decoration: none;
     color: blueviolet;
     margin-top: 10px;
-    text-align: center;
 }
 
 
@@ -836,6 +832,14 @@ body, html{
      
      .contact-items{
         width: 50%;
+     }
+
+     .contact-items a{
+        text-align: center;
+     }
+
+     .contact-items h3{
+        text-align: center;
      }
 
 }
