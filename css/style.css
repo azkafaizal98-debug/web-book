@@ -32,12 +32,12 @@ body, html{
 }
 
 .text-nav button {
-    padding: 8px;
+    padding: 4px;
     border: none;
-    border-radius: 12px;
+    border-radius: 50%;
     background-color: white;
     color: blueviolet;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
@@ -227,6 +227,10 @@ body, html{
     padding: 10px;
     display: flex;
     justify-content: center;
+}
+
+.hero-search input{
+    margin-right: 35px;
 }
 
 .hero-search input{
@@ -593,7 +597,7 @@ body, html{
 
 .faq-items{
     color: white;
-    width: 80%;
+    width: 60%;
     text-align: center;
     background-color: blueviolet;
     padding: 18px;
@@ -613,7 +617,7 @@ body, html{
 }
 
 .faq-details details{
-    font-size: 23px;
+    font-size: 18px;
     color: blueviolet;
 }
 
@@ -673,11 +677,11 @@ body, html{
     padding: 12px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .contact-items h3{
     width: 100%;
+    border-bottom: 1px solid blueviolet;
 }
 
 .contact-items a{
@@ -704,7 +708,7 @@ body, html{
     .text-nav button{
         padding: 4px;
         font-size: 10px;
-        width: 50%;
+        margin-right: 10px;
     }
 
     .container-nav .nav-flex{
