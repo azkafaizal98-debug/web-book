@@ -20,7 +20,7 @@
          <nav>
              <ul>
                 <li>
-                    <a href="#showcase-container">Home</a>
+                    <a href="#container-hero">Home</a>
                 </li>
                 <li>
                     <a href="#list-tema-container">Book</a>
@@ -51,7 +51,7 @@
                  <h2>
                      “Perpustakaan digital ini dirancang untuk mendukung semangat belajar, mempermudah akses informasi bagi semua kalangan.”
                 </h2>
-                <button><a href="#">BOOK A DEMO</a></button>
+                <button><a href="#">SEE ALL BOOKS</a></button>
                 <p>“Hai, Pecinta Buku!”'👋</p>
                 </div>
             </div>
@@ -543,6 +543,29 @@
         </div>
     </div>
 
+    <div class="copyright-container">
+        <div class="copyright-flex">
+            <div class="copyright-items">
+                <h3>Kontak Kami</h3>
+                <p> <i class="fa-solid fa-phone"></i> +62 851-4122-22830</p>
+                <p> <i class="fa-solid fa-envelope"></i> azkafaizal98@gmail.com</p>
+                <p> <i class="fa-solid fa-location-dot"></i> jl. Indonesia, Kendal, Kendal, Kendal</p>
+            </div>
+            <div class="copyright-items">
+                <h3>Follow Kami</h3>
+                <p>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </p>
+                <p>&copy; Azka Faizal Dwi Ramadhan</p>
+                <p>Lets collaborate with me</p>
+                <p id="waktu"></p>
+            </div>
+        </div>
+    </div>
+
 
     <script>
 
@@ -550,6 +573,19 @@
             let body = document.getElementById("dark-mode");
             body.classList.toggle("dark-mode");
         }
+
+        
+        let time = document.getElementById("waktu")
+        let waktu = new Date();
+        let bulan = waktu.getMonth();
+        let tanggal = waktu.getDay();
+        let tahun = waktu.getFullYear();
+        let jam = waktu.getHours();
+        let menit = waktu.getMinutes();
+        let detik = waktu.getMilliseconds();
+
+
+        time.textContent = `${bulan + 1}-${tanggal}-${tahun} ${jam}:${menit}:${detik}`
     </script>
 </body>
 </html>
