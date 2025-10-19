@@ -1,0 +1,151 @@
+var {
+    --dusty-gray : #979797;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: radial-gradient(circle, 
+    white 0%, 
+    #f1e9fb 50%, 
+    #d8c9f0 100%);
+    height: 100vh; */
+    scroll-behavior: smooth;
+}
+
+/* Dark mode */
+
+.dark-mode{
+    background: linear-gradient(to bottom, 
+    black 0%, 
+    #4c4c4c 70%, 
+    rgb(44, 43, 43) 100%);
+    color: white;
+}
+
+.text-nav button {
+    padding: 4px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: blueviolet;
+    font-size: 10px;
+}
+
+
+.text-nav button:hover{
+    background: black;
+    color: white;
+    transition: 0.8s;
+}
+
+/* Nav */
+.container-nav{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+}
+
+.nav-flex{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 60px;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+
+.nav-flex label,#navbar{
+    display: none;
+}
+
+.text-nav h3{
+    padding: 15px;
+    font-size: 28px;
+    color: white;
+}
+
+.text-nav{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: blueviolet;
+    border-radius: 2px 30px 2px 30px;
+    margin-left: 10px;
+}
+
+.navigasi-a{
+    padding: 15px;
+}
+
+ nav ul{
+    display: flex;
+    list-style: none;
+    background-color: white;
+    padding: 6px;
+    border-radius: 14px;
+}
+
+.navigasi-a ul li a:hover{
+    background-color: blueviolet;
+    transition: 0.8s;
+    color: white;
+}
+ nav ul li a{
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 14px;
+}
+
+
+.login{
+    padding: 15px;
+}
+
+.login button{
+    margin: 0px 10px;
+    padding: 5px 14px;
+    border-radius: 14px;
+    background-color: white;
+    border: none;
+    font-size: 12px;
+}
+
+.login button:hover{
+    background-color: blueviolet;
+    transition: 0.8s;
+    color: white;
+}
+
+.login a{
+    padding: 8px 25px;
+    background-color: blueviolet;
+    border-radius: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}

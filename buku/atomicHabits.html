@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styleAtomicHabits.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body id="dark-mode">
+     <div class="container-nav">
+        <div class="nav-flex">
+            <label for="navbar"><i class="fa-solid fa-burger"></i></label>
+            <input type="checkbox" id="navbar">
+            <div class="text-nav">
+                <h3>Book Webb</h3>
+                <button onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <div class="navigasi-a">
+         <nav>
+             <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/index.html">Book</a>
+                </li>
+                <li>
+                    <a href="/index.html">Description</a>
+                </li>
+                <li>
+                    <a href="/index.html">FAQs</a>
+                </li>
+                <li>
+                    <a href="/index.html">Contact</a>
+                </li>
+            </ul>
+         </nav>  
+            </div>
+            <div class="login">
+                <button>Log in</button>
+                <a href="#">ALL BOOK</a>
+            </div>
+        </div>
+    </div>
+
+
+   <div class="container-atomic-habits">
+    <div class="flex-atomic-habits">
+        <div class="items-atomic-habits">
+            
+        </div>
+    </div>
+   </div>
+
+   
+     <script>
+        function darkMode(){
+            let body = document.getElementById("dark-mode");
+            body.classList.toggle("dark-mode");
+        }
+     </script>
+</body>
+</html>
